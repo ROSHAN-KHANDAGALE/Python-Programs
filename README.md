@@ -121,3 +121,44 @@ n3 = int("%s%s%s" % (n, n, n))
 print(n1 + n2 + n3)
 ```
 
+### 11. Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s).
+### Sample function : abs()
+```
+Expected Result :
+abs(number) -> number
+Return the absolute value of the argument.
+```
+
+### 12. Write a Python program that prints the calendar for a given month and year.
+#### Note : Use 'calendar' module.
+### Code
+```chatinput
+import calendar
+
+month = int(input("Enter month: "))
+year = int(input("Enter Year: "))
+cal = calendar.month(year, month)
+print(cal)
+```
+
+### 13. Write a Python program to print the following 'here document'.
+### Sample string : 
+```
+a string that you "don't" have to escape
+This
+is a ....... multi-line
+heredoc string --------> example
+```
+
+### 14. Write a Python program to calculate the number of days between two dates.
+### Sample dates : (2014, 7, 2), (2014, 7, 11)
+### Expected output : 9 days
+### Code
+```chatinput
+from datetime import date
+
+date1 = date(2014, 7, 29)
+date2 = date(2014, 8, 3)
+print("Remaining days: ", abs(date1 - date2))
+
+```
